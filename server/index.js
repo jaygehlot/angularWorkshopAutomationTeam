@@ -25,7 +25,7 @@ app.use('/hello', function(req,res,next) {
 	next();
 });
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost/meanapp');
+mongoose.connect('mongodb://10.156.0.135/meanapp');
 mongoose.connection.once('open', function() {
 
 	//Load the models.
